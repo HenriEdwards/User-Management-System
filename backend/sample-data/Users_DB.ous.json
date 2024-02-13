@@ -1,0 +1,24 @@
+[{
+  "_id": {
+    "$oid": "65ba89af00c0b47ce865fbcd"
+  },
+  "name": "News management"
+},
+{
+  "_id": {
+    "$oid": "65ba89af00c0b47ce865fbce"
+  },
+  "name": "Software reviews"
+},
+{
+  "_id": {
+    "$oid": "65ba89af00c0b47ce865fbcf"
+  },
+  "name": "Hardware reviews"
+},
+{
+  "_id": {
+    "$oid": "65ba89af00c0b47ce865fbd0"
+  },
+  "name": "Opinion publishing"
+}]

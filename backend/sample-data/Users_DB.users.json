@@ -1,0 +1,139 @@
+[{
+  "_id": {
+    "$oid": "65c4e0c269dbbecc9c8e3128"
+  },
+  "username": "henri",
+  "password": "$2a$08$xg8nT1N/T0hrRHGg7L.h.O6qdXZ3zMzb/1dT04PqytgLpesktmjOu",
+  "role": "Admin",
+  "divisions": [
+    {
+      "$oid": "65ba8c7000c0b47ce865fbff"
+    },
+    {
+      "$oid": "65ba8c7000c0b47ce865fbfb"
+    },
+    {
+      "$oid": "65ba8c7000c0b47ce865fbf6"
+    },
+    {
+      "$oid": "65ba8c7000c0b47ce865fbf5"
+    },
+    {
+      "$oid": "65ba8c7000c0b47ce865fbf3"
+    },
+    {
+      "$oid": "65ba8c7000c0b47ce865fbf0"
+    },
+    {
+      "$oid": "65ba8c7000c0b47ce865fbe3"
+    },
+    {
+      "$oid": "65ba8c7000c0b47ce865fbdf"
+    },
+    {
+      "$oid": "65ba8c7000c0b47ce865fbdd"
+    },
+    {
+      "$oid": "65ba8c7000c0b47ce865fbef"
+    },
+    {
+      "$oid": "65ba8c7000c0b47ce865fbe0"
+    },
+    {
+      "$oid": "65ba8c7000c0b47ce865fbe1"
+    }
+  ],
+  "ous": [
+    {
+      "$oid": "65ba89af00c0b47ce865fbce"
+    },
+    {
+      "$oid": "65ba89af00c0b47ce865fbcf"
+    },
+    {
+      "$oid": "65ba89af00c0b47ce865fbd0"
+    },
+    {
+      "$oid": "65ba89af00c0b47ce865fbcd"
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c6192c1f586be5338f2456"
+  },
+  "username": "james",
+  "password": "$2a$08$z4UuwdFP9A9BOivBcmWOleL/Thmy5fWPGOCv922Fo1R5YudQy3aS6",
+  "role": "Normal",
+  "divisions": [
+    {
+      "$oid": "65ba8c7000c0b47ce865fbf5"
+    },
+    {
+      "$oid": "65ba8c7000c0b47ce865fbe2"
+    }
+  ],
+  "ous": [
+    {
+      "$oid": "65ba89af00c0b47ce865fbd0"
+    },
+    {
+      "$oid": "65ba89af00c0b47ce865fbce"
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c6197e1f586be5338f245a"
+  },
+  "username": "jack",
+  "password": "$2a$08$wQbyEbCFShe1q0onZ62lfuH5NLpjDdWDJCOqwp9ENk67JYMfcNp9G",
+  "role": "Management",
+  "divisions": [
+    {
+      "$oid": "65ba8c7000c0b47ce865fbd7"
+    },
+    {
+      "$oid": "65ba8c7000c0b47ce865fbe1"
+    }
+  ],
+  "ous": [
+    {
+      "$oid": "65ba89af00c0b47ce865fbcd"
+    },
+    {
+      "$oid": "65ba89af00c0b47ce865fbce"
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c9f1b7125fc19f416d5851"
+  },
+  "username": "reviewer",
+  "password": "$2a$08$vX/Lt1p4Q00FAL9DbvYlBOdYs.7UYnXT6xo99XPJH.pQ3TrzP2mxG",
+  "role": "Normal",
+  "divisions": [
+    {
+      "$oid": "65ba8c7000c0b47ce865fbda"
+    },
+    {
+      "$oid": "65ba8c7000c0b47ce865fbdc"
+    },
+    {
+      "$oid": "65ba8c7000c0b47ce865fbee"
+    }
+  ],
+  "ous": [
+    {
+      "$oid": "65ba89af00c0b47ce865fbcd"
+    },
+    {
+      "$oid": "65ba89af00c0b47ce865fbcf"
+    }
+  ],
+  "__v": 0
+}]
