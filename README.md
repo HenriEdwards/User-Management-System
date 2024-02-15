@@ -8,25 +8,12 @@ Table of contents
 =================
 
 <!--ts-->
-   * [Live Link](#Live)
+   * [Live Link](#Live-Link)
    * [Usage](#usage)
       * [STDIN](#stdin)
-      * [Local files](#local-files)
-      * [Remote files](#remote-files)
-      * [Multiple files](#multiple-files)
-      * [Combo](#combo)
-      * [Auto insert and update TOC](#auto-insert-and-update-toc)
-      * [GitHub token](#github-token)
-      * [TOC generation with Github Actions](#toc-generation-with-github-actions)
-   * [Tests](#tests)
-   * [Dependency](#dependency)
-   * [Docker](#docker)
-     * [Local](#local)
-     * [Public](#public)
 <!--te-->
 
-Live Link
-============
+## Live Link
 NOTE: Due to the backend being hosted on Render Free Tier, the server takes 50 seconds start after initial load, thereafter requests should be almost instant.
 
 So after clicking the link, please wait 50 seconds for backend to start.
