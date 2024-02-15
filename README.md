@@ -13,7 +13,7 @@ Table of contents
    * [Security](#Security)
    * [Usage](#Usage)
    * [Testing Information](#Testing-Information)
-   *  *  [Sample users](#Sample-users)
+        *  [Sample users](#Sample-users)
    * [Screenshots](Screenshots)
 <!--te-->
 
