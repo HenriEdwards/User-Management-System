@@ -6,11 +6,15 @@ The application is built using the MERN stack.
 
 Table of contents
 =================
-
 <!--ts-->
    * [Live Link](#Live-Link)
-   * [Usage](#usage)
-      * [STDIN](#stdin)
+   * [Features](#Features)
+   * [Database](#Database)
+   * [Security](#Security)
+   * [Usage](#Usage)
+   * [Testing Information](#Testing-Information)
+   * [Sample users](#Sample-users)
+   * [Screenshots](Screenshots)
 <!--te-->
 
 ## Live Link
