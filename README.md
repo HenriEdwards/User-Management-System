@@ -25,7 +25,7 @@ Table of contents
      * [Public](#public)
 <!--te-->
 
-## Live Link
+Live Link
 ============
 NOTE: Due to the backend being hosted on Render Free Tier, the server takes 50 seconds start after initial load, thereafter requests should be almost instant.
 
