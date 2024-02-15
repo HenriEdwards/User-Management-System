@@ -5,7 +5,6 @@ This project aims to be a centralized system to manage login details across mult
 The application is built using the MERN stack. 
 
 ## Features
-
 #### The Credential Management Web App offers the following features:
 
 - User Authentication: Users can register and log in to the application securely.
