@@ -4,6 +4,37 @@ This is a web application built with the MERN stack (MongoDB, Express.js, React.
 This project aims to be a centralized system to manage login details across multiple continents, languages, and websites. 
 The application is built using the MERN stack. 
 
+Table of contents
+=================
+
+<!--ts-->
+   * [Live Link](#Live)
+   * [Usage](#usage)
+      * [STDIN](#stdin)
+      * [Local files](#local-files)
+      * [Remote files](#remote-files)
+      * [Multiple files](#multiple-files)
+      * [Combo](#combo)
+      * [Auto insert and update TOC](#auto-insert-and-update-toc)
+      * [GitHub token](#github-token)
+      * [TOC generation with Github Actions](#toc-generation-with-github-actions)
+   * [Tests](#tests)
+   * [Dependency](#dependency)
+   * [Docker](#docker)
+     * [Local](#local)
+     * [Public](#public)
+<!--te-->
+
+## Live Link
+============
+NOTE: Due to the backend being hosted on Render Free Tier, the server takes 50 seconds start after initial load, thereafter requests should be almost instant.
+
+So after clicking the link, please wait 50 seconds for backend to start.
+[User Credential Manager](https://65ce0e98bac17706b51798e3--resplendent-pithivier-138605.netlify.app)
+
+Login - Use one of the sample users below for instance:
+- Admin: username: `henri` password: `justlogin`
+
 ## Features
 #### The Credential Management Web App offers the following features:
 
