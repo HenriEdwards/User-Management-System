@@ -26,6 +26,10 @@ So after clicking the link, please wait 50 seconds for backend to start.
 Login - Use one of the sample users below for instance:
 - Admin: username: `henri` password: `justlogin`
 
+- Management: username: `jack` password: `superpassword`
+
+- Normal: username: `james` password: `test123`
+
 ## Features
 #### The Credential Management Web App offers the following features:
 
