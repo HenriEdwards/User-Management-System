@@ -82,17 +82,17 @@ Login - Use one of the sample users below:
 
 ## Screenshots
 
-![Screenshot 1](app-screenshots/login-landing.png)
+![Screenshot 1](app-screenshots/login-landings.png)
 *Screenshot 1: Login/Registration page*
 
-![Screenshot 2](app-screenshots/user-divisions.png)
+![Screenshot 2](app-screenshots/user-division.png)
 *Screenshot 2: User landing, user specific divisions/credentials access*
 
-![Screenshot 3](app-screenshots/credential-repo.png)
+![Screenshot 3](app-screenshots/credential-repos.png)
 *Screenshot 3: A specific division's credential repository*
 
-![Screenshot 4](app-screenshots/manage-users.png)
+![Screenshot 4](app-screenshots/manage-user.png)
 *Screenshot 4: Admin page, manage user's access*
 
-![Screenshot 5](app-screenshots/update-user.png)
+![Screenshot 5](app-screenshots/update-users.png)
 *Screenshot 5: Update a specific user's divisions/access*
