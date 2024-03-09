@@ -1,0 +1,18 @@
+.user {
+  background-color: var(--color-blue-dark);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* @media screen and (max-width: 675px) {
+  .user-header{
+    font-size: 15px;
+  }
+} */
+
+.user-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

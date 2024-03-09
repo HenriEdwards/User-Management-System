@@ -1,0 +1,127 @@
+.division {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: space-between;
+}
+
+
+.division-content {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  padding: 1rem 0;
+
+}
+
+.division-content:last-child, .division-content:nth-child(3) {
+  border-bottom: 0px solid var(--color-blue-dark);
+}
+
+
+.division-content-section{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+
+ul{
+  padding-inline-start: 0px
+}
+
+.division-content ul li {
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  font-size: 13px;
+
+  border-radius: 20px;
+  padding: 0.5rem 2rem;
+  color: white;
+}
+
+.division-content ul li p{
+  position: relative;
+}
+
+.division-content ul li p::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: 25%;
+  right: 25%;
+  height: 1px;
+  background:var(--color-blue-light); 
+} 
+
+.division-content-h2{
+  display: flex;
+  justify-content: center;
+}
+
+.division-content h2{
+  font-size: 15px;
+  text-align: center;
+  letter-spacing: 0.75px;
+  position: relative;
+  color: white;
+  background: linear-gradient(to bottom, var(--color-blue-light), var(--color-blue-standard));
+  padding: 1rem 0;
+  text-shadow: 0px 3px 2px var(--color-blue-dark);
+  width: 250px;
+  border-bottom: 2px solid var(--color-blue-darker);
+}
+
+.division-content ul li button {
+  border-radius: 20px;
+  height: 30px;
+  color: #fff;
+  letter-spacing: 1px;
+  cursor: pointer;
+  width: 100px;
+  font-size: 12px;
+  background: linear-gradient(to bottom, var(--color-blue-standard), var(--color-blue-light));
+  border: 2px solid var(--color-blue-light);
+  box-shadow: 0 2px 1px 1px var(--color-blue-darker);
+}
+
+
+
+@media screen and (max-width: 1100px) {
+  .division {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+  }
+
+  .division-content{
+    display: flex;
+    width: 100%;
+  }
+
+  .division-content:nth-child(3) {
+    border-bottom: 1px solid var(--color-blue-dark);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .division {
+      display: grid;
+      grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

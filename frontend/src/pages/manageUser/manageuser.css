@@ -1,0 +1,6 @@
+.manage-users{
+  background-color: var(--color-blue-dark);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}

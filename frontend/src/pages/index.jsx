@@ -1,0 +1,6 @@
+export { default as Credential } from './credential/Credential'
+export { default as Login } from './login/Login'
+export { default as ManageUser } from './manageUser/ManageUser'
+export { default as NotFound } from './notFound/NotFound'
+export { default as UpdateUser } from './updateUser/UpdateUser'
+export { default as UserInfo } from './UserInfo/UserInfo'

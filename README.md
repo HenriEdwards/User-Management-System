@@ -18,7 +18,7 @@ Table of contents
 <!--te-->
 
 ## Live Link
-NOTE: Due to the backend being hosted on Render Free Tier, the server takes 50 seconds start after initial load, thereafter requests should be almost instant.
+NOTE: Due to the backend being hosted on Render Free Tier, the server sometimes takes less than 50 seconds start after initial load, thereafter requests should be almost instant.
 
 So after clicking the link, please wait 50 seconds for backend to start.
 [User Credential Manager](https://resplendent-pithivier-138605.netlify.app)
@@ -82,17 +82,17 @@ Login - Use one of the sample users below:
 
 ## Screenshots
 
-![Screenshot 1](app-screenshots/login-landings.png)
+![Screenshot 1](app-screenshots/login.png)
 *Screenshot 1: Login/Registration page*
 
 ![Screenshot 2](app-screenshots/user-division.png)
 *Screenshot 2: User landing, user specific divisions/credentials access*
 
-![Screenshot 3](app-screenshots/credential-repos.png)
+![Screenshot 3](app-screenshots/repo.png)
 *Screenshot 3: A specific division's credential repository*
 
-![Screenshot 4](app-screenshots/manage-user.png)
+![Screenshot 4](app-screenshots/user-manage.png)
 *Screenshot 4: Admin page, manage user's access*
 
-![Screenshot 5](app-screenshots/update-users.png)
+![Screenshot 5](app-screenshots/user-update.png)
 *Screenshot 5: Update a specific user's divisions/access*

@@ -2,45 +2,38 @@ import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 // pages & components
-import Home from './pages/Home'
-import UserLanding from './pages/UserLanding';
-import Credentials from './pages/Credentials';
-import ManageUsers from './pages/ManageUsers';
-import UserUpdate from './pages/UserUpdate';
-import NotFound from './pages/NotFound';
+import { Login, UserInfo, Credential, UpdateUser, NotFound, ManageUser } from './pages/index'
 
 function App() {
   return (
     <>
     <BrowserRouter>
-    <div>
       <Routes>
         <Route 
           path='/'
-          element={<Home />}
+          element={<Login />}
         />
         <Route 
           path='/user-page'
-          element={<UserLanding />}
+          element={<UserInfo />}
         />
         <Route 
           path='/credential-repo'
-          element={<Credentials />}
+          element={<Credential />}
         />
         <Route 
           path='/manage-users'
-          element={<ManageUsers />}
+          element={<ManageUser />}
         />
         <Route 
           path='/update-user/:id'
-          element={<UserUpdate />}
+          element={<UpdateUser />}
         />
         <Route 
           path='*'
           element={<NotFound />}
         />
       </Routes>
-    </div>
     </BrowserRouter>
     </>
   );
