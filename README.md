@@ -20,7 +20,6 @@ Table of contents
 ## Live Link
 NOTE: Due to the backend being hosted on Render Free Tier, the server sometimes takes less than 50 seconds start after initial load, thereafter requests should be almost instant.
 
-So after clicking the link, please wait 50 seconds for backend to start.
 [User Credential Manager](https://resplendent-pithivier-138605.netlify.app)
 
 Login - Use one of the sample users below:
