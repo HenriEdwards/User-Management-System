@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: space-between;
+  animation: fade-in-out 2s;
 }
 
 
@@ -40,7 +41,7 @@ ul{
 
   border-radius: 20px;
   padding: 0.5rem 2rem;
-  color: white;
+  color: var(--color-blue-dark);
 }
 
 .division-content ul li p{
@@ -48,13 +49,15 @@ ul{
 }
 
 .division-content ul li p::after {
-  content: '';
+  content: '|';
   position: absolute;
-  top: -50%;
-  left: 25%;
-  right: 25%;
-  height: 1px;
-  background:var(--color-blue-light); 
+  top: -4%;
+  left: -10px;
+  color: var(--color-blue-light);
+  font-size: 1rem;
+  width: .1rem;
+  height: 10px;
+
 } 
 
 .division-content-h2{
@@ -67,32 +70,54 @@ ul{
   text-align: center;
   letter-spacing: 0.75px;
   position: relative;
-  color: white;
-  background: linear-gradient(to bottom, var(--color-blue-light), var(--color-blue-standard));
-  padding: 1rem 0;
-  text-shadow: 0px 3px 2px var(--color-blue-dark);
+  color: var(--color-blue-darker);
+  padding: .5rem 0;
   width: 250px;
-  border-bottom: 2px solid var(--color-blue-darker);
+  border-bottom: 1px solid var(--color-blue-dark);
 }
 
 .division-content ul li button {
-  border-radius: 20px;
+  position: relative;
   height: 30px;
-  color: #fff;
+  color: var(--color-blue-dark);
+  background: transparent;
   letter-spacing: 1px;
   cursor: pointer;
   width: 100px;
   font-size: 12px;
-  background: linear-gradient(to bottom, var(--color-blue-standard), var(--color-blue-light));
-  border: 2px solid var(--color-blue-light);
-  box-shadow: 0 2px 1px 1px var(--color-blue-darker);
+  z-index: 1;
+  border: none;
+  border-bottom: 1px solid var(--color-blue-light);
+  transition: .25s linear;
 }
 
+.division-content ul li button:hover {
+  color: #fff;
+}
 
+.division-content ul li button::before {
+  content: '';
+  position: absolute;
+  background: var(--color-blue-light);
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+  height: 0;
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  color: #fff;
+  transition: height .5s;
+}
+
+.division-content ul li button:hover::before {
+  height: 100%;
+
+}
 
 @media screen and (max-width: 1100px) {
   .division {
-      display: grid;
+
       grid-template-columns: 1fr 1fr;
   }
 

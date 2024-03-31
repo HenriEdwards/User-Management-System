@@ -2,7 +2,7 @@ import './repository.css'
 import { useLocation, useNavigate } from 'react-router-dom'
 import { useEffect, useState, useContext } from 'react'
 import UserContext from '../../context/UserContext'
-import { Alert, AddCredential } from '../index'
+import { Alert, AddCredential, Loading } from '../index'
 
 const Repository = () => {
   const navigateTo = useNavigate()
@@ -14,6 +14,7 @@ const Repository = () => {
   const [showAlert, setShowAlert] = useState(false)
   const {state} = useLocation()
   const {id, role, division} = state
+  const { displayNav, setDisplayNav } = useContext(UserContext);
 
   // Reset alert status
   useEffect(() => {
@@ -109,14 +110,17 @@ const Repository = () => {
   return (
     <>
       <div className='repository'>
-        <h1 className='header'>{ division } - Repository</h1>
-        <h3><span className='greyd'>Role:</span> <span className='colord'> {role}</span></h3>
+        <h1 className={displayNav ? 'header' : 'header-none'}>{ division } - Repository</h1>
+        <div className={displayNav ? 'show' : 'hide' }>
+          <p className='user-role'>{role}</p>
+        </div>
         {/* Map over credentials & output into editable inputs */}
         <div className='repository-content'>
         {credentials && credentials.length > 0 ? (
           credentials.map((credential, index) => (
 
               <div className='repository-fields' key={index}>
+                  {setDisplayNav(true)}
                   <label>Application</label>
                     <input
                       type='text'
@@ -151,9 +155,10 @@ const Repository = () => {
           ))
           
         ) : (
-          <div className='no-users-found'>
-            <p>No Repositories Found...</p>
-          </div>
+          <>
+          <Loading />
+          {setDisplayNav(false)}
+          </>
         )}
         
         <div className=''>

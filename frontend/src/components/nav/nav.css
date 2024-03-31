@@ -2,23 +2,29 @@
   display: flex;
   justify-content: flex-end;
   /* background: linear-gradient(15deg,var(--color-blue-dark),var(--color-blue-light)) border-box;  */
-  background: var(--color-blue-standard);
+  background-color: var(--color-bg);
   /* border: 2px solid var(--color-blue-light); */
   font-family: var(--font-family);
+  animation: fade-in-out 2s;
 }
 
 .nav a {
   text-decoration: none;
-  color: white;
-  border-left: 2px solid var(--color-blue-light);
+  color: var(--color-blue-dark);
 }
 
-h3 {
+.nav-items h3 {
   font-weight: 400;
   font-size: 13px;
   margin-left: 1rem;
   letter-spacing: 0.7px;
+  padding-left: 2rem;
+  border-left: 1px solid var(--color-blue-light);
 
+}
+
+.hide-nav{
+  display: none;
 }
 
 .nav-big {

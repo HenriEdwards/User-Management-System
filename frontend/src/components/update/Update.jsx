@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react'
 import { useContext } from 'react'
 import PropTypes from 'prop-types'
 import UserContext from '../../context/UserContext'
-import { Alert } from '../index'
+import { Alert, Loading } from '../index'
 
 const Update = () => {
   const navigateTo = useNavigate()
@@ -12,6 +12,7 @@ const Update = () => {
   const {id} = useParams()
   // Get access to current user / setUser context
   const {user, setUser} = useContext(UserContext)
+  const {setDisplayNav} = useContext(UserContext);
   // Handle state of current user to be update
   const [userData, setUserData] = useState(null)
   // Define state variables
@@ -168,9 +169,10 @@ const Update = () => {
   if (!userData || ouDivisions.length === 0) {
     // Render a loading state until user data and OU divisions are fetched
     return (
-    <div className='no-users-found'>
-      <p>Loading...</p>
-    </div>
+      <>
+        <Loading />
+        {setDisplayNav(false)}
+      </>
     )
   }
 
@@ -190,10 +192,14 @@ const Update = () => {
   return (
     <>
       <div className='update'>
+        {setDisplayNav(true)}
         <h1 className='header'>Update User</h1>
         <div className='update-content'>
           <form onSubmit={handleSubmit}>
             <div className='username-role'>
+              <div className='username'>
+                <h3>{userData.username}</h3>
+              </div>
               <div className='role'>
                 <label>
                   {/* Render dropdown to update user role */}
@@ -211,9 +217,6 @@ const Update = () => {
                 </label>
               </div>
 
-              <div className='username'>
-                <h3><span className='greyd'>Username:</span> <span className='colord'>{userData.username}</span></h3>
-              </div>
             </div>
             {/* Loop through divisions grouped by ou */}
             <div className='update-users'>

@@ -8,12 +8,13 @@ import { Logout } from '../index'
 const Nav = () => {
   // Get access to current user context
   const {user} = useContext(UserContext)
-  const [toggleMenu, setToggleMenu] = useState(false);
+  const {displayNav} = useContext(UserContext)
+  const [toggleMenu, setToggleMenu] = useState(false)
 
   return (
     <>
-      <div className='nav'>
-        <div className='nav-big'>
+      <div className={displayNav ? 'nav' : 'nav hide-nav'}>
+        <div className='nav-big nav-items'>
           <Link to='/user-page'>
             <h3>CoolTech</h3>
           </Link>

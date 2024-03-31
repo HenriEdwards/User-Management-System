@@ -2,11 +2,13 @@ import './user.css'
 import { useEffect, useState, useContext } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import UserContext from '../../context/UserContext';
+import { Loading } from '../index'
 
 function User() {
   const navigateTo = useNavigate();
   // Get access to current user context
   const { user } = useContext(UserContext);
+  const { displayNav, setDisplayNav } = useContext(UserContext);
   // Define state variables
   const [users, setUsers] = useState([]);
 
@@ -44,7 +46,7 @@ function User() {
 
   return (
     <div className='user-container'>
-        <h3 className='header'>Manage Users</h3>
+        <h3 className={displayNav ? 'header': 'header-none'}>Manage Users</h3>
       <div className='user-container-content'>
         {users.length > 0 ? (
           // Map over each user
@@ -73,12 +75,15 @@ function User() {
             });
 
             return (
-              // Render div, username and role for each user
+              // Render div, username and role for each user, nav
                 <div className='user-container-user' key={user._id}>
+                  {setDisplayNav(true)};
                   <div className='user-container-user-profile'>
                     <div className='user-container-user-profile-text'>
-                      <h3><span className='greyd'>Username:</span> <span className='colord'>{user.username}</span></h3>
-                      <h3><span className='greyd'>Role:</span> <span className='colord'> {user.role}</span></h3>
+                      <p>{user.username}</p>
+                    </div>
+                    <div className='user-container-user-profile-text'>
+                      <p>{user.role}</p>
                     </div>
                   </div>
                   {/* <div className='user-container-user-role border'>
@@ -98,9 +103,7 @@ function User() {
             );
           })
         ) : (
-          <div className='no-users-found'>
-            <p>Loading...</p>
-          </div>
+          <Loading />
         )}
       </div>
     </div>

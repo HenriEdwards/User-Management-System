@@ -5,7 +5,7 @@ const NotFound = () => {
 
   return (
     <>
-      <div>
+      <div className='page-not-found'>
         <Nav />
         <h1>Page Not Found</h1>
       </div>

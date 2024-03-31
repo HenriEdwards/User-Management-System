@@ -1,0 +1,4 @@
+.page-not-found {
+  background-color: var(--color-bg);
+  color: var(--color-blue-dark);
+}

@@ -1,0 +1,24 @@
+.no-users-found{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.no-users-found img{
+  animation: big-small 0.5s infinite;
+}
+
+
+@keyframes big-small {
+  0%{
+   scale: 0.9; 
+   transform: rotate(180deg);
+  }
+  50%{
+   scale: 1.3; 
+  }
+  100%{
+   scale: 0.9; 
+  }
+}

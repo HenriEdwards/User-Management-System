@@ -2,15 +2,13 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-
+  animation: fade-in-out 2s;
 }
 
 .update-user {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 2rem 0;
-
 }
 
 
@@ -18,7 +16,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem;
-  color: white;
+  color: var(--color-blue-dark);
   letter-spacing: 1px;
   font-size: 13px;
 }
@@ -29,17 +27,15 @@
 }
 
 .update-user-division-name {
-  margin-bottom: 2rem;
   font-size: 15px;
   text-align: center;
   letter-spacing: 0.75px;
   position: relative;
-  color: white;
-  background: linear-gradient(to bottom, var(--color-blue-light), var(--color-blue-standard));
-  padding: 1rem 0;
-  text-shadow: 0px 3px 2px var(--color-blue-dark);
+  color: var(--color-blue-darker);
+  padding: .5rem 0;
   width: 250px;
-  border-bottom: 2px solid var(--color-blue-darker);
+  border-bottom: 1px solid var(--color-blue-dark);
+  margin-bottom: 2rem;
 }
 
 .update-users {
@@ -55,45 +51,92 @@
 }
 
 .update-btn {
-  border-radius: 20px;
+  position: relative;
   height: 30px;
-  color: #fff;
+  color: var(--color-blue-dark);
+  background: transparent;
   letter-spacing: 1px;
   cursor: pointer;
   width: 100px;
   font-size: 12px;
-  background: linear-gradient(to bottom, var(--color-blue-standard), var(--color-blue-light));
-  border: 2px solid var(--color-blue-light);
-  box-shadow: 0 2px 1px 1px var(--color-blue-darker);
-  margin-bottom: 2rem;
+  z-index: 1;
+  border: none;
+  border-bottom: 1px solid var(--color-blue-light);
+  transition: .25s linear;
+  overflow: hidden;
+}
+
+.update-btn:hover {
+  color: #fff;
+}
+
+.update-btn::before {
+  content: '';
+  position: absolute;
+  background: var(--color-blue-light);
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+  height: 0;
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  color: #fff;
+  transition: height .5s;
+}
+
+.update-btn:hover::before {
+  height: 100%;
 }
 
 .update-btn-container, .username-role{
+  margin: 1rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 2rem;
+}
+
+.username-role .username h3{
+  text-align: center;
+  color: var(--color-blue-dark);
+  letter-spacing: 1px;
+  background: rgb(0,0,0,0.03);
+  border: none;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom: 1px solid var(--color-blue-dark);
+  width: 100px;
+  font-size: 13px;
+  padding: .3rem;
+
+}
+
+.update-btn-container{
   margin-top: 2rem;
-  color: white;
 }
 
 .role select {
-
+  background: rgb(0,0,0,0.03);
   font-size: 13px;
-  background-color: var(--color-blue-standard);
-  color: white;
+  color: var(--color-blue-dark);
   border: 1px solid #fff;
   cursor: pointer;
-  box-shadow: 0 1px 1px 1px var(--color-blue-darker);
+  outline: none;
   letter-spacing: 1px;
+  font-weight: bold;
 }
 
 #select-form {
+
     border: unset;
     width: 125px;
     height: 30px;
-    width: 150px;
+    width: 135px;
     padding-left: 1rem;
-  
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 1px solid var(--color-blue-dark);
     /* Arrow */
     appearance: none;
     background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23131313%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");

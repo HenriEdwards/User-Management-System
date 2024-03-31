@@ -7,6 +7,7 @@ const UserContextProvider = ({ children }) => {
   const storedUser = JSON.parse(localStorage.getItem('user'))
   // Set initial state value of user to storedUser if it exists or null if it doesnt
   const [user, setUser] = useState(storedUser || null)
+  const [displayNav, setDisplayNav] = useState(true)
 
   // Update local storage whenever user state changes
   useEffect(() => {
@@ -15,7 +16,7 @@ const UserContextProvider = ({ children }) => {
 
   return (
      // Provide user context value to children components
-    <UserContext.Provider value={{ user, setUser }}>
+    <UserContext.Provider value={{ user, setUser, displayNav, setDisplayNav }}>
       {children}
     </UserContext.Provider>
   )

@@ -7,20 +7,16 @@
   --gradient-bar: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%);
   
   --color-bg: #f2f2f2;
-  --color-grey: #f0f0f0;
-  --color-blue-light: #2b82d9;
-  --color-blue-lighter: #e9faff;
+  --color-grey: #e6e6e6;
+  --color-blue-light: #2badd9;
   --color-blue: #0283FE;
   --color-blue-dark: #00375c;
   --color-blue-darker: #002b55;
   --color-blue-dark--tp: #003f72e6;
 
 
-  --color-blue-standard-light: #3279c0;
+  --color-blue-standard-light: #32c0c0;
   --color-blue-standard: #0B5DAE;
-
-  --color-darkgreen: #197b00;
-  --color-lightgreen: #25ba00;
 
 }
 
