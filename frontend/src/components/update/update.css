@@ -60,8 +60,9 @@
   width: 100px;
   font-size: 12px;
   z-index: 1;
+  outline: none;
   border: none;
-  border-bottom: 1px solid var(--color-blue-light);
+  /* border-bottom: 1px solid var(--color-blue-light); */
   transition: .25s linear;
   overflow: hidden;
 }
@@ -77,15 +78,15 @@
   z-index: -1;
   bottom: 0;
   left: 0;
-  height: 0;
+  height: 1px;
   width: 100%;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
   color: #fff;
-  transition: height .5s;
+  transition: .4s;
 }
 
 .update-btn:hover::before {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
   height: 100%;
 }
 
@@ -147,15 +148,11 @@
 
 @media screen and (max-width: 1450px) {
 
-
   .update-boxes {
     grid-template-columns: 1fr 1fr;
   }
 
 }
-
-
-
 
 @media screen and (max-width: 1100px) {
 

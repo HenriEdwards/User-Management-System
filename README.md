@@ -23,11 +23,11 @@ NOTE: Due to the backend being hosted on Render Free Tier, the server sometimes 
 [User Credential Manager](https://resplendent-pithivier-138605.netlify.app)
 
 Login - Use one of the sample users below:
-- Admin: username: `henri` password: `justlogin`
+- Admin: username: `Henri` password: `justlogin`
 
-- Management: username: `jack` password: `superpassword`
+- Management: username: `Jack` password: `superpassword`
 
-- Normal: username: `james` password: `test123`
+- Normal: username: `James` password: `test123`
 
 ## Features
 #### The Credential Management Web App offers the following features:
@@ -64,6 +64,8 @@ Login - Use one of the sample users below:
 
 #### To use the app locally.
 - Clone the repository
+- In the Frontend, remove the API calls to the hosted backend on RENDER "https://user-live.onrender.com/".
+  - All API calls should just be 'api/....'
 - Navigate to the backend & frontend via a terminal and type in both. `npm install`.
 - Navigate to the backend & frontend via a terminal and type in both. `npm run dev`.
 

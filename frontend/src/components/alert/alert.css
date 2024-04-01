@@ -13,4 +13,5 @@
   transition: opacity 0.5s ease-in-out;
   font-size: 13px;
   letter-spacing: 1px;
+  z-index: 99;
 }

@@ -28,8 +28,8 @@ const Nav = () => {
           </div>
         <div className='nav-small'>
           {toggleMenu
-            ? <RiCloseLine color="#fff" size={27} onClick={() => setToggleMenu(false)} />
-            : <RiMenu3Line color="#fff" size={27} onClick={() => setToggleMenu(true)} />}
+            ? <RiCloseLine color="#002b55" size={27} onClick={() => setToggleMenu(false)} />
+            : <RiMenu3Line color="#002b55" size={27} onClick={() => setToggleMenu(true)} />}
           {toggleMenu && (
           <div>
             <div>
