@@ -86,14 +86,14 @@ Login - Use one of the sample users below:
 ![Screenshot 1](app-screenshots/1.png)
 *Screenshot 1: Login/Registration page*
 
-![Screenshot 2](app-screenshots/5.png)
+![Screenshot 2](app-screenshots/51.png)
 *Screenshot 2: User landing, user specific divisions/credentials access*
 
-![Screenshot 3](app-screenshots/4.png)
+![Screenshot 3](app-screenshots/41.png)
 *Screenshot 3: A specific division's credential repository*
 
-![Screenshot 4](app-screenshots/3.png)
+![Screenshot 4](app-screenshots/21.png)
 *Screenshot 4: Admin page, manage user's access*
 
-![Screenshot 5](app-screenshots/2.png)
+![Screenshot 5](app-screenshots/31.png)
 *Screenshot 5: Update a specific user's divisions/access*
