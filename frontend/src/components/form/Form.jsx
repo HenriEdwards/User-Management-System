@@ -45,7 +45,6 @@ export default function Form() {
     })
     const json = await response.json()
 
-
     // Check/handle if username or password is invalid
     if(!response.ok && (json.message === 'Invalid username or password')){
       setErrorType('Invalid username or password')

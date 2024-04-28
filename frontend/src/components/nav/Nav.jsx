@@ -16,7 +16,7 @@ const Nav = () => {
       <div className={displayNav ? 'nav' : 'nav hide-nav'}>
         <div className='nav-big nav-items'>
           <Link to='/user-page'>
-            <h3>CoolTech</h3>
+            <h3>Credential Manager</h3>
           </Link>
           {/* Extra security measure to how hide link depending on user role */}
           {user.role === 'Admin' && (
@@ -34,7 +34,7 @@ const Nav = () => {
           <div>
             <div>
               <Link to='/user-page'>
-              <h3>CoolTech</h3>
+              <h3>Credential Manager</h3>
               </Link>
               {user.role === 'Admin' && (
                 <Link to='/manage-users'>

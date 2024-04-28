@@ -95,8 +95,46 @@ const registerUser = async (req, res) => {
     // Add user to db
     const user = await User.create({
       username,
-      password: encryptedPassword
+      password: encryptedPassword,
+      divisions: 
+      [
+        {
+          _id: "65ba8c7000c0b47ce865fbf5"
+        },
+        {
+          _id: "65ba8c7000c0b47ce865fbf0"
+        },
+        {
+          _id: "65ba8c7000c0b47ce865fbf6"
+        },
+        {
+          _id: "65ba8c7000c0b47ce865fbd6"
+        },
+        {
+          _id: "65ba8c7000c0b47ce865fbd5"
+        },
+        {
+          _id: "65ba8c7000c0b47ce865fbdf"
+        }
+      ],
+      ous: 
+      [
+        {
+          _id: "65ba89af00c0b47ce865fbd0"
+        },
+        {
+          _id: "65ba89af00c0b47ce865fbcf"
+        },
+        {
+          _id: "65ba89af00c0b47ce865fbcd"
+        },
+        {
+          _id: "65ba89af00c0b47ce865fbce"
+        }
+      ]
     })
+
+
 
     res.json({ success: true, 'message': 'Registered' })
   } catch {
@@ -131,6 +169,7 @@ const loginUser = async (req, res) => {
       // User not found
       return res.status(400).json({ message: 'Invalid username or password' })
     }
+
     
     // Apply jwt
     let token

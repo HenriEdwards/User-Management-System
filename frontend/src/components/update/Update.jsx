@@ -74,6 +74,8 @@ const Update = () => {
         }
 
         const json = await response.json()
+
+        console.log(json)
         setOuDivisions(json)
       } catch (error) {
         console.log(error)

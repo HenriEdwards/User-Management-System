@@ -5,7 +5,7 @@
   background-color: var(--color-bg);
   /* border: 2px solid var(--color-blue-light); */
   font-family: var(--font-family);
-  animation: fade-in-out 2s;
+  animation: fade-in-out .75s;
 }
 
 .nav a {

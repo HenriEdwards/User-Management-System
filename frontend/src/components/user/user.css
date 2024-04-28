@@ -4,7 +4,7 @@
 }
 
 .user-container-user {
-  animation: fade-in-out 2s;
+  animation: fade-in-out .75s;
 }
 
 .user-container-user-division ul li{
@@ -35,7 +35,7 @@
 .user-container-user-division-container{
   display: flex;
   flex-direction: column;
-  animation: fade-in-out 2s;
+  animation: fade-in-out .75s;
 }
 
 .user-container-user-division h2{
@@ -137,7 +137,7 @@
 .user-container-user-button{
   display: flex;
   justify-content: center;
-  animation: fade-in-out 2s;
+  animation: fade-in-out .75s;
   padding: 2rem;
 }
 

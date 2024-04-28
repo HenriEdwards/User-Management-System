@@ -5,27 +5,9 @@ select {
   font: inherit;
 }
 
-/* --font-family: 'Manrope', sans-serif;
-
---gradient-text: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
---gradient-bar: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%);
-
---color-bg: #f2f2f2;
---color-grey: #f0f0f0;
---color-blue-light: #2b82d9;
---color-blue-lighter: #e9faff;
---color-blue: #0283FE;
---color-blue-dark: #00375c;
---color-blue-darker: #002b55;
---color-blue-dark--tp: #003f72e6;
-
-
---color-blue-standard-light: #3279c0;
---color-blue-standard: #0B5DAE;
-
---color-darkgreen: #197b00;
---color-lightgreen: #25ba00; */
-
+ul{
+  padding-inline-start: 0px
+}
 
 .header{
   /* margin-left: 1rem; */
@@ -40,7 +22,7 @@ select {
   background: var(--color-blue-dark);
   margin: 0;
   letter-spacing: .7px;
-  animation: fade-in-out 2s;
+  animation: fade-in-out .75s;
 }
 
 @keyframes fade-in-out {

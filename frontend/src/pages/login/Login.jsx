@@ -20,8 +20,6 @@ const Login = () => {
     fetchConnection()
     }, [])
 
-
-
   // Indicate to user time until server is up
   useEffect(() => {
     if (seconds > 0) {

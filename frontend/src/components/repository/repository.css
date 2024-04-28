@@ -6,7 +6,7 @@
   justify-content: center;
 }
 .repository {
-  animation: fade-in-out 2s;
+  animation: fade-in-out .75s;
 }
 
 .repository-fields {
@@ -66,6 +66,9 @@
   font-weight: bold;
 }
 
+.repository-fields button:hover {
+  color: #fff;
+}
 
 .repository-fields button {
   position: relative;
@@ -82,10 +85,6 @@
   /* border-bottom: 1px solid var(--color-blue-light); */
   transition: .25s linear;
   overflow: hidden;
-}
-
-.repository-fields button:hover {
-  color: #fff;
 }
 
 .repository-fields button::before {
