@@ -84,7 +84,6 @@
   border: none;
   /* border-bottom: 1px solid var(--color-blue-light); */
   transition: .25s linear;
-  overflow: hidden;
 }
 
 .repository-fields button::before {
@@ -94,7 +93,7 @@
   z-index: -1;
   bottom: 0;
   left: 0;
-  height: 1px;
+  height: 1%;
   width: 100%;
   color: #fff;
   transition: .4s;
