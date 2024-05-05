@@ -13,9 +13,8 @@ const Update = () => {
   // Get access to current user / setUser context
   const {user, setUser} = useContext(UserContext)
   const {setDisplayNav} = useContext(UserContext);
-  // Handle state of current user to be update
+  // State variables
   const [userData, setUserData] = useState(null)
-  // Define state variables
   const [ouDivisions, setOuDivisions] = useState([])
   const [showAlert, setShowAlert] = useState(false)
 

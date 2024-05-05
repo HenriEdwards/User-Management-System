@@ -3,8 +3,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: var(--color-blue-dark);
-  color: #fff;
+  background-color: #fff;
+  color: var(--color-blue-dark);
   border: 1px solid var(--color-blue-light);
   padding: 1rem;
   border-radius: 4px;

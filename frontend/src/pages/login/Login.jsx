@@ -4,7 +4,6 @@ import { Form } from '../../components/index'
 import bg from './images/bg.jpg'
 
 const Login = () => {
-  const [seconds, setSeconds] = useState(10)
   const [connected, setConnected] = useState(false)
 
     useEffect(() => {
@@ -20,25 +19,14 @@ const Login = () => {
     fetchConnection()
     }, [])
 
-  // Indicate to user time until server is up
-  useEffect(() => {
-    if (seconds > 0) {
-      const timer = setInterval(() => {
-        setSeconds(prevSeconds => prevSeconds - 1)
-      }, 1000)
-
-      return () => clearInterval(timer)
-    }
-  }, [seconds])
-
   return(
     <>
     <div className='server-status'>
       {
-        (seconds == 0 || connected == true) ? (
+        (connected == true) ? (
           <p className='server-status-connected'>Server connected</p>
         ) : (
-          <p className='server-status-unconnected'>Server is starting up, please wait {seconds} seconds.</p>
+          <p className='server-status-unconnected'>Server is starting up...</p>
         )
       }
 
