@@ -1,8 +1,6 @@
 # Credential Management Web App
 
-This is a web application built with the MERN stack (MongoDB, Express.js, React.js, Node.js) to address the credential management needs of Cool Tech. 
-This project aims to be a centralized system to manage login details across multiple continents, languages, and websites. 
-The application is built using the MERN stack. 
+A user management system where each user has a role: Admin, Management, or Normal. Admins can assign management users to divisions, and management can assign credential repositories to normal users. The system ensures security with features like encryption, authentication, and role-based access control.
 
 Table of contents
 =================
