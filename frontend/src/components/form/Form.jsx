@@ -36,7 +36,7 @@ export default function Form() {
     }
 
     // Send login / register request
-    const response = await fetch(`https://user-live.onrender.com/api/users/${formtype}`, {
+    const response = await fetch(`/api/users/${formtype}`, {
       method: 'POST',
       body: JSON.stringify(user),
       headers: {
@@ -89,6 +89,9 @@ export default function Form() {
   return (
     <>
       <div className='form-content'>
+          <div className='form-header'>
+            <h1>Welcome</h1>
+          </div>
         <div className='form-selector'>
           
           <button
@@ -115,7 +118,7 @@ export default function Form() {
             className={emptyfields.includes('username') ? 'error' : ''}
             />
           <input 
-            type='text'
+            type='password'
             placeholder='Password'
             value={password}
             onChange={(e) => setPassword(e.target.value)}

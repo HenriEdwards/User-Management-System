@@ -3,49 +3,27 @@
 .container{
   background-color:var(--color-blue-dark--tp);
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
 
 .background{
-  position: absolute;
+position: fixed;
   display: flex;
-  width: 100%;
+  justify-content: center;
+  align-items: center;
   height: 100%;
+  flex: 2;
   z-index: -1;
 }
 
-.background img{
-  height: 100%;
-  width: 100%;
-}
-
 .form{
-  width: 220px;
-  height: 400px;
+  flex: 3;
+  min-width: 500px;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: white;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.608);
-  padding: 2rem;
-  border-radius: 5px;
-}
-
-.form-header {
-  display: flex;
-  height: 100%;
-  align-items: center;
-  border-top: 1px solid black;
-}
-
-.form-header h1 {
-  text-align: center;
-  letter-spacing: 0.2rem;
-  font-weight: 300;
-  font-size: 25.5pt;
-  width: 100%;
+  justify-content: center;
 }
 
 .server-status{
@@ -54,17 +32,4 @@
   width: 100%;
   display: flex;
   justify-content: center;
-}
-
-.server-status-unconnected{
-  color: red;
-  padding: 1rem;
-  background-color: rgba(255, 0, 0, 0.357);
-
-}
-
-.server-status-connected{
-  color: green;
-  padding: 1rem;
-  background-color: rgba(0, 128, 0,  0.357);
 }

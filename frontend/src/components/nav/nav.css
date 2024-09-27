@@ -1,25 +1,28 @@
 .nav {
   display: flex;
   justify-content: flex-end;
-  /* background: linear-gradient(15deg,var(--color-blue-dark),var(--color-blue-light)) border-box;  */
+  /* background: linear-gradient(15deg,var(--color-grey-dark),var(--color-blue-light)) border-box;  */
   background-color: var(--color-bg);
   /* border: 2px solid var(--color-blue-light); */
   font-family: var(--font-family);
   animation: fade-in-out .75s;
+  border-bottom: 1px solid var(--color-grey-dark);
 }
 
 .nav a {
   text-decoration: none;
-  color: var(--color-blue-dark);
+  color: rgb(47, 47, 47);
+
 }
 
 .nav-items h3 {
+
   font-weight: 400;
-  font-size: 13px;
+  font-size: 15px;
   margin-left: 1rem;
-  letter-spacing: 0.7px;
+
   padding-left: 2rem;
-  border-left: 1px solid var(--color-blue-light);
+  border-left: 1px solid var(--color-grey-dark);
 
 }
 
@@ -29,7 +32,7 @@
 
 .nav-big {
   display: flex;
-  gap: 1.4rem;
+  gap: 1rem;
   align-items: center;
   width: 700px;
   justify-content: center;

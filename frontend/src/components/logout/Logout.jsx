@@ -8,7 +8,7 @@ const Logout = () => {
   // Handle logout
   const handleLogout = async () => {
     try {
-      const response = await fetch('https://user-live.onrender.com/api/users/logout', {
+      const response = await fetch('/api/users/logout', {
         method: 'POST'
       })
 

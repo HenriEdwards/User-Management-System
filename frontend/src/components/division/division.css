@@ -3,6 +3,9 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: space-between;
   animation: fade-in-out 2s;
+  gap: 2rem;
+  box-sizing: border-box;
+  padding: 0 5%;
 }
 
 
@@ -11,11 +14,13 @@
   flex-direction: column;
   height: auto;
   padding: 1rem 0;
+  /* border: 1px solid var(--color-grey-dark); */
+  border-radius: 10px;
 
 }
 
 .division-content:last-child, .division-content:nth-child(3) {
-  border-bottom: 0px solid var(--color-blue-dark);
+  border-bottom: 0px solid var(--color-grey-dark);
 }
 
 .division-content-section{
@@ -36,7 +41,7 @@
   min-width: 300px;
   border-radius: 20px;
   padding: 0.5rem 2rem;
-  color: var(--color-blue-dark);
+  color: var(--color-grey-dark);
 }
 
 .division-content ul li p{
@@ -68,13 +73,13 @@
   color: var(--color-blue-darker);
   padding: .5rem 0;
   width: 250px;
-  border-bottom: 1px solid var(--color-blue-dark);
+  /* border-bottom: 1px solid var(--color-grey-dark); */
 }
 
 .division-content ul li button {
   position: relative;
   height: 30px;
-  color: var(--color-blue-dark);
+  color: var(--color-grey-dark);
   background: transparent;
   letter-spacing: 1px;
   cursor: pointer;
@@ -122,7 +127,7 @@
   }
 
   .division-content:nth-child(3) {
-    border-bottom: 1px solid var(--color-blue-dark);
+    border-bottom: 1px solid var(--color-grey-dark);
   }
 }
 

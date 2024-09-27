@@ -3,6 +3,13 @@
   border: 1px solid red;
 }
 
+.user-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .user-container-user {
   animation: fade-in-out .75s;
 }
@@ -17,7 +24,7 @@
 
   border-radius: 20px;
   padding: 0.5rem 2rem;
-  color: var(--color-blue-dark);
+  color: var(--color-grey-dark);
 }
 
 .user-container-user-division-container{
@@ -46,7 +53,7 @@
   color: var(--color-blue-darker);
   padding: .5rem 0;
   width: 250px;
-  border-bottom: 1px solid var(--color-blue-dark);
+  border-bottom: 1px solid var(--color-grey-dark);
 }
 
 .user-container-user-division-name-container{
@@ -63,7 +70,7 @@
 
 .user-container-user-profile-text{
   text-align: center;
-  color: var(--color-blue-dark);
+  color: var(--color-grey-dark);
   letter-spacing: 1px;
   font-weight: bold;
   background: rgb(0,0,0,0.03);
@@ -72,7 +79,7 @@
   width: 100px;
   font-size: 13px;
   border: none;
-  border-bottom: 1px solid var(--color-blue-dark);
+  border-bottom: 1px solid var(--color-grey-dark);
   padding: .3rem;
 }
 
@@ -84,6 +91,7 @@
 
 .user-container-content{
   position: relative;
+  width: 100%;
 }
 
 .user-container-content > :nth-child(2n) {
@@ -98,7 +106,7 @@
 .update-user-button {
   position: relative;
   height: 30px;
-  color: var(--color-blue-dark);
+  color: var(--color-grey-dark);
   background: transparent;
   letter-spacing: 1px;
   cursor: pointer;

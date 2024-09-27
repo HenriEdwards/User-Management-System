@@ -29,12 +29,27 @@
   align-items: center;
 }
 
+.form-header h1 {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  width: 100%;
+  font-size: 46px;
+}
+
 .form-content {
   display: flex;
   flex-direction: column;
+  max-width: 220px;
+  height: 400px;
   gap: 1rem;
   color: var(--color-blue-light);
   font-family: var(--font-family);
+  background-color: white;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.608);
+  padding: 2rem;
+  border-radius: 5px;
 }
 
 .form-selector {
@@ -55,7 +70,7 @@
 }
 
 .form-body input:focus{
-  border: 1px solid var(--color-blue-dark);
+  border: 1px solid var(--color-grey-dark);
   outline: none;
 }
 

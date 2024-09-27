@@ -4,13 +4,14 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  
 }
 .repository {
   animation: fade-in-out .75s;
 }
 
 .repository-fields {
-  color: var(--color-blue-dark);
+  color: var(--color-grey-dark);
   font-size: 13px;
   margin-bottom: 1rem;
   display: flex;
@@ -32,8 +33,6 @@
   border-radius: 40px;
   height: 30px;
   font-size: 11px;
-  font-family: var(--font-family);
-
   border: none;
   padding-left: 1rem;
   min-width: 200px;
@@ -53,7 +52,7 @@
 
 .repository .show .user-role {
   text-align: center;
-  color: var(--color-blue-dark);
+  color: var(--color-grey-dark);
   letter-spacing: 1px;
   background: rgb(0,0,0,0.03);
   border-top-left-radius: 5px;
@@ -61,7 +60,7 @@
   width: 100px;
   font-size: 13px;
   border: none;
-  border-bottom: 1px solid var(--color-blue-dark);
+  border-bottom: 1px solid var(--color-grey-dark);
   padding: .3rem;
   font-weight: bold;
 }
@@ -73,7 +72,7 @@
 .repository-fields button {
   position: relative;
   height: 30px;
-  color: var(--color-blue-dark);
+  color: var(--color-grey-dark);
   background: transparent;
   letter-spacing: 1px;
   cursor: pointer;

@@ -4,7 +4,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #fff;
-  color: var(--color-blue-dark);
+  color: var(--color-grey-dark);
   border: 1px solid var(--color-blue-light);
   padding: 1rem;
   border-radius: 4px;
