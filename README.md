@@ -58,18 +58,14 @@ Login - Use one of the sample users below:
 - Permission control through the web app.
 - PORT, MongoDB database url connection, JWT secret token stored in .env.
 
-## Usage
-
-#### To use the app locally.
-- Clone the repository
-- In the Frontend, remove the API calls to the hosted backend on RENDER "https://user-live.onrender.com/".
-  - All API calls should just be 'api/....'
-- Navigate to the backend & frontend via a terminal and type in both. `npm install`.
-- Navigate to the backend & frontend via a terminal and type in both. `npm run dev`.
-
 ## Testing information
 
 - Access granted to any ip address for MongoDB.
+
+#### Login
+
+You can create an account, some divisions and OU's are automatically assigned to new users.
+
 
 #### Sample users
 
