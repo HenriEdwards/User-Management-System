@@ -23,7 +23,7 @@ function User() {
       try {
         // Send request to retrieve all users data
         const response = await fetch(
-          '/api/users/manage-users',
+          '/credential-manager/api/users/manage-users',
           {
             method: 'GET',
           }

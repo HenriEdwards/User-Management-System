@@ -8,7 +8,7 @@ const Logout = () => {
   // Handle logout
   const handleLogout = async () => {
     try {
-      const response = await fetch('/api/users/logout', {
+      const response = await fetch('/credential-manager/api/users/logout', {
         method: 'POST'
       })
 

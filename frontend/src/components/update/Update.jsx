@@ -28,7 +28,7 @@ const Update = () => {
     // Send request to retrieve info for user to update
     const fetchUser = async () => {
       try {
-        const response = await fetch(`/api/users/user?id=${id}`, {
+        const response = await fetch(`/credential-manager/api/users/user?id=${id}`, {
           method: 'GET'
         })
 

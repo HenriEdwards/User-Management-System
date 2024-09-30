@@ -34,7 +34,7 @@ const Repository = () => {
     const fetchData = async () => {
       try {
         // Sent request to retrieve credential data
-        const response = await fetch('/api/users/credential-repo', {
+        const response = await fetch('/credential-manager/api/users/credential-repo', {
           method: 'POST',
           body: JSON.stringify({ id: id }),
           headers: {
@@ -70,7 +70,7 @@ const Repository = () => {
 
     try {
       // Send request to update specific credential
-      const response = await fetch('/api/users/credential-repo/update-credential', {
+      const response = await fetch('/credential-manager/api/users/credential-repo/update-credential', {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',
