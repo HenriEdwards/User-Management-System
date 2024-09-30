@@ -2,7 +2,7 @@ import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 // pages & components
-import { Login, UserInfo, Credential, UpdateUser, NotFound, ManageUser } from './pages/index'
+import { Login, UserInfo, Credential, UpdateUser, ManageUser } from './pages/index'
 
 function App() {
   return (
@@ -31,7 +31,7 @@ function App() {
         />
         <Route 
           path='*'
-          element={<NotFound />}
+          element={<Login />}
         />
       </Routes>
     </BrowserRouter>

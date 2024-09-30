@@ -19,11 +19,11 @@ const Nav = () => {
             <h3>Credential Manager</h3>
           </Link>
           {/* Extra security measure to how hide link depending on user role */}
-          {user.role === 'Admin' && (
+          {user?.role === 'Admin' && (
             <Link to='/manage-users'>
               <h3>User Manager</h3>
             </Link>
-          )}
+           )}
           <Logout />
           </div>
         <div className='nav-small'>
@@ -36,7 +36,7 @@ const Nav = () => {
               <Link to='/user-page'>
               <h3>Credential Manager</h3>
               </Link>
-              {user.role === 'Admin' && (
+              {user?.role === 'Admin' && (
                 <Link to='/manage-users'>
                   <h3>User Manager</h3>
                 </Link>
