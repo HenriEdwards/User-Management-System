@@ -28,7 +28,7 @@ const Update = () => {
     // Send request to retrieve info for user to update
     const fetchUser = async () => {
       try {
-        const response = await fetch(`/credential-manager/api/users/user?id=${id}`, {
+        const response = await fetch(`/api/users/user?id=${id}`, {
           method: 'GET'
         })
 
@@ -63,7 +63,7 @@ const Update = () => {
     const fetchOuDivisions = async () => {
       try {
         // Send request to retrieve ou and divisions info
-        const response = await fetch('/credential-manager/api/divisions', {
+        const response = await fetch('/api/divisions', {
           method: 'GET'
         })
 
@@ -136,7 +136,7 @@ const Update = () => {
       }
 
       // Send the updated user data to the backend
-      const response = await fetch(`/credential-manager/api/users/update-user?id=${id}`, {
+      const response = await fetch(`/api/users/update-user?id=${id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

@@ -36,7 +36,7 @@ export default function Form() {
     }
 
     // Send login / register request
-    const response = await fetch(`/credential-manager/api/users/${formtype}`, {
+    const response = await fetch(`/api/users/${formtype}`, {
       method: 'POST',
       body: JSON.stringify(user),
       headers: {

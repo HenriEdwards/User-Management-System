@@ -36,7 +36,7 @@ const AddCredential = ({ id, onCredentialAdded }) => {
     const query = { id, newCredential }
 
     // Send request to add credential to specific credential repo
-    const response = await fetch('/credential-manager/api/users/credential-repo/add-credential', {
+    const response = await fetch('/api/users/credential-repo/add-credential', {
       method: 'PATCH',
       body: JSON.stringify(query),
       headers: {
