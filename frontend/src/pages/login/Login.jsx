@@ -7,7 +7,7 @@ const Login = () => {
     <>
       <div className='container'>
         <div className='background'>
-          <img src='/assets/bg.jpg' alt='bg' />
+          <img src='/credential-manager/assets/bg.jpg' alt='bg' />
         </div>
         <div className='form'>
           <Form />

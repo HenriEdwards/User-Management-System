@@ -8,7 +8,7 @@ function Loading() {
   return (
     <div className='no-users-found'>
       {setDisplayNav(false)};
-      <img src='/assets/loading-icon.png' alt="loading" />
+      <img src='/credential-manager/assets/loading-icon.png' alt="loading" />
     </div>
   );
 }
