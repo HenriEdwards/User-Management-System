@@ -1,6 +1,5 @@
 import './login.css'
 import { Form } from '../../components/index'
-import bg from './images/bg.jpg'
 
 const Login = () => {
 
@@ -8,7 +7,7 @@ const Login = () => {
     <>
       <div className='container'>
         <div className='background'>
-          <img src={bg} alt='bg' />
+          <img src='/assets/bg.jpg' alt='bg' />
         </div>
         <div className='form'>
           <Form />

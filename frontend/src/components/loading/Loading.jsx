@@ -1,6 +1,5 @@
 import { useContext } from 'react';
 import UserContext from '../../context/UserContext';
-import loadingImage from '../../assets/loading/loading-icon.png'
 import './loading.css'
 
 function Loading() {
@@ -9,7 +8,7 @@ function Loading() {
   return (
     <div className='no-users-found'>
       {setDisplayNav(false)};
-      <img src={loadingImage} alt="loading" />
+      <img src='/assets/loading-icon.png' alt="loading" />
     </div>
   );
 }
