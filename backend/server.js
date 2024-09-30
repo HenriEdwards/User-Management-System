@@ -29,13 +29,13 @@ app.use((req, res, next) => {
 })
 
 // Handle user related routes
-app.use('/api/users', userRoutes)
+app.use('/credential-manager/api/users', userRoutes)
 
 // Handle credentials related routes
-app.use('/api/users/credential-repo', credentialRoutes)
+app.use('/credential-manager/api/users/credential-repo', credentialRoutes)
 
 // Handle ou/divisions related routes
-app.use('/api', divisionRoutes)
+app.use('/credential-manager/api', divisionRoutes)
 
 // Connect to DB
 connectToDatabase()
